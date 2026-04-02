@@ -15,7 +15,7 @@ void updateLogic(){
 
 while(true){
   set.Switch();
-    if(set.Play == 0){
+    if(set.Play == 0 || set.Play == 2){
 set.chosen.calc();  
   }
   delay(1);  
