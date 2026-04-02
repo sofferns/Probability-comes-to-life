@@ -14,6 +14,16 @@ This simulation demonstrates the emergence of the Gaussian (Normal) Distribution
 
 A classic model in stochastic processes. The simulation tracks a "walker" moving on a one-dimensional line, where each step is taken either to the right or to the left with a probability of P=0.5. It provides a clear visual intuition for the properties of random movements and variance over time.
 
+3. "Physics" based random water percolation
+
+The simulation creates a 200x200 grid with the following rules:
+
+1.ground water can permeate into with probability 0.625 and ground water cannot with probability 0.375
+2.in the highest row if water can permeate water will appear
+3.water will permeate from one grid to his left, his right and his down
+
+The result is a nice looking "squarish" natural water percolation
+
 🛠 Technical Highlights
 
 The core of this project wasn't just the math, but the software architecture behind it:
